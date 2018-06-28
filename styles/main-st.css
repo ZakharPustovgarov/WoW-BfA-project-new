@@ -1,0 +1,98 @@
+.row {background-color: black;
+    border-bottom: 6px black solid;}
+.warp {margin-top:10% }
+div.war{background-image:url(../assets/AllianceVsHorde.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding: 3%}
+.allies { padding: 0 !important;
+        background-image: url(../assets/allies-bg.png);
+        background-size: cover}
+.allies p{padding: 3%}
+#kulop{background-image:url(../assets/Kul_bg.jpg) !important;
+    background-size: cover;}
+#zanop{background-image:url(../assets/Zal_bg.jpg) !important;
+    background-size: cover;}
+#kulop img:hover, #zanop  img:hover {
+    transform: scaleY(1.5);
+    transform: scalex(1.05);
+    transition-duration: 0.2s;
+    cursor: pointer;
+}
+
+.fronts { background-image:url(../assets/fronts_bg.jpg) ;
+    background-size: cover;
+    padding: 10% !important }
+.features-inf{ background-image:url(../assets/features_bg.jpg) !important;
+    background-size: cover;
+    padding: 6% !important}
+.azeroth-heart {padding: 6% !important;
+                background-size:cover }
+.azeroth-heart div {display: flex;
+                    flex-direction: column;
+                    align-items: center}
+.azeroth-heart div img {margin-top: -10%;
+                        width:20%}
+.feat {display: flex;
+        flex-direction: column;
+        align-items: center;}
+.featicons {width: 50%;}
+
+.infozand,.infokult{
+    display: none;
+    padding: 3%;
+    border-top:4px black solid;
+    background-size: cover;
+}
+.pictures-of-sea{
+    width: 100%;
+    padding: 0
+}
+.pictures-of-sea img { width: 100%;
+    height: auto;
+    border:3px black solid;
+    border-radius: 4px;
+    margin:0 }
+.pictures-of-sea img:hover { 
+    transform: scale(1.2);
+    transition-duration: .4s
+ }
+.infozand{background-image:url(../assets/zuldazar-capital.jpg);}
+.infokult{background-image:url(../assets/boralus.jpg);}
+
+.pictures-of-sea{ border: none}
+
+
+@media (min-width: 576px) {
+    .allies-carousel {width:100%}
+ }
+
+
+@media (min-width: 768px) { }
+
+@media (max-width: 991px) {
+    div.war{background-image:url(../assets/mobile-allies.jpg);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        padding: 10%}
+    .fronts {background-image: url(../assets/mobile-fronts-bg.jpg) !important;}
+    .azeroth-heart div img{ margin-top: -15%;
+                            width:70% }
+   #kulop, #zanop{display: none!important}
+   .infozand,.infokult {display: block!important}
+   .wow-header{display: none;}
+    .pictures-of-sea img {margin-top: 7%;}
+    .azeroth-heart{background-image: url(../assets/azerite-armor-mobile.jpg);}
+    }   
+
+@media (min-width: 992px) {
+    .jaina {border-right: 4px black solid}
+    .allies-carousel {width:60%}
+    .azeroth-heart{background-image: url(../assets/azerite-armor.jpg);}
+}
+
+
+@media (min-width: 1200px) {
+   
+}
+

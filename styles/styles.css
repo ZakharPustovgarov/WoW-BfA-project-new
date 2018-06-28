@@ -1,0 +1,45 @@
+header {background:0 !important;}
+.dropdown-menu p:hover {background: none}
+.navbar {background: linear-gradient(#3f180f,#200c08);
+        border-bottom: 4px black solid;}
+
+.navbar-brand{margin-left: 0}
+.dropdown-menu a,.dropdown-menu p {color:whitesmoke !important;}
+.dropdown-menu {background: linear-gradient(#3f180f,#200c08);
+    border: 3px black solid  !important;
+    padding:0!important}
+.horde_dropdown, .alliance_dropdown {margin:0!important}
+.horde_dropdown {background-color: rgb(136, 45, 30);}
+.alliance_dropdown {background-color: rgb(59, 77, 151);
+                    border-bottom:4px black solid;}
+body {color: whitesmoke !important;
+    text-shadow:0 1px 5px black,1px 0 5px black,-1px 0 5px black,0 -1px 5px black;
+    font-size: 100%!important;
+    font-family: 'Lora', serif!important;
+    background-color: black}
+
+
+.row .row{background: 0;
+        border:0}
+
+
+.other {background-image: url(../assets/other-bg.jpg);
+        background-size: 100%r;
+        background-repeat: no-repeat;
+        background-color: rgb(18, 13, 9) }
+
+@media (max-width: 991px) {
+    .wow-header{display: none!important;}
+   .navbar-brand a img {width:18%}
+}
+
+@media (min-width: 992px) {
+    .wow-icon{display: none;}
+
+}
+
+
+@media (min-width: 1200px) {
+   
+}
+

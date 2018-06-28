@@ -1,0 +1,28 @@
+
+.col-md-6, .col-md-4 {display: flex;
+                flex-direction: column;
+                align-items: center;
+}
+
+
+.col-md-6 img, .col-md-4 img{ width: 100%;
+
+}
+@media (min-width: 576px) {
+    .new img {display:none }
+}
+
+@media (min-width: 768px) { 
+   
+    
+}
+
+
+@media (min-width: 992px) {
+    .new img {display:block }
+}
+
+
+@media (min-width: 1200px) {
+   
+}

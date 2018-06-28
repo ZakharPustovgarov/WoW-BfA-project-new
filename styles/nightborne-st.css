@@ -1,0 +1,8 @@
+@media (max-width: 767px) {
+    .aboutallies {background-image: url(../assets/Nightborn-bg-mobile.png)}
+}
+
+@media (min-width: 768px) {
+    .aboutallies {background-image: url(../assets/Nightborn-bg.png)}
+}
+

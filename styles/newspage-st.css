@@ -1,0 +1,53 @@
+
+.news-other{border: 4px black solid;
+    border-radius: 5px;
+    background:linear-gradient(#3f180f,#200c08);
+    margin-top: 2%;
+    margin-bottom: 2%; 
+}
+h1 {padding: 1%}
+.new {
+
+    border-top: 2px black solid;
+}
+.new img{border: 4px black solid;
+    border-radius: 8px}
+.new a {color: whitesmoke;}
+.new a:hover {color: whitesmoke;}
+.new >div {
+    display: flex;
+    align-items: center;
+    padding: 2%
+}
+.new img {margin-left: 1%}
+.new-of-day {background-image: url(../assets/trilobit-1.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            width: 100%;
+            height: 25em;
+            border: 4px black solid;
+            border-radius: 8px}
+.new-of-day:hover {transform: scale(1.03);
+                    transition-duration: .2s;
+                    cursor: pointer;
+
+}
+.new-of-day p {padding: 2%;}
+@media (min-width: 576px) {
+    .new img {display:none }
+}
+
+@media (min-width: 768px) { 
+   
+    
+}
+
+
+@media (min-width: 992px) {
+    .new img {display:block }
+}
+
+
+@media (min-width: 1200px) {
+   
+}
