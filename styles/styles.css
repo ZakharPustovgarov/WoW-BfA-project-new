@@ -21,7 +21,7 @@ body {color: whitesmoke !important;
 
 .row .row{background: 0;
         border:0}
-
+.row {margin:0!important}
 
 .other {background-image: url(../assets/other-bg.jpg);
         background-size: 100%r;
