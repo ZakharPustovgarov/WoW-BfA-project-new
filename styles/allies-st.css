@@ -1,7 +1,7 @@
 .aboutallies{background-size: cover;
             background-repeat: no-repeat}
 .container-fluid p {margin-top: 2%!important}
-
+#images {padding: 0!important}
 #images img { border:5px black solid;
             border-radius: 5px;}
 #images img:hover{box-shadow: 0px 0px 10px aliceblue;
@@ -23,16 +23,26 @@ iframe {height:23em;
                     padding-right:13%;
                     padding-bottom: 6%;
                     padding-top: 6% }
-#switchers {border: 2px black solid;
-    border-radius: 10px;
-    background-color: black;
-    display: flex;
+#switchers {display: flex;
     flex-direction:row;
-    width: 18%;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
     margin:2% ;
 }
-#switchers div {width: 50%;
-                height: 100%;}
+#switchers > div{display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 2px black solid;
+    border-radius: 10px;
+    background-color: black;
+    height: 100%;}
+#switchers > div:hover{box-shadow: 0px 0px 10px aliceblue;
+                    transition-duration: .2s;
+                    cursor: pointer;}
+.allies-carousel {margin-top: 2%;}
+
 @media (min-width: 576px) {
     
  }
@@ -41,12 +51,17 @@ iframe {height:23em;
 @media (min-width: 768px) {
     #images img { width: 100%}
     #switchers img{width: 30%;}
+    #switchers > div {width:30%}
+
  }
 
 @media (max-width: 767px) {
     #images img { width: 80%;
-                margin-top: 2%}
+                margin-bottom: 2%}
     #switchers img{width: 50%;}
+    #switchers{margin-bottom: 5%}
+    #switchers > div {width:40%}
+
 }
 
 @media (min-width: 992px) {
