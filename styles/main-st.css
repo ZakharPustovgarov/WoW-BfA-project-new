@@ -77,7 +77,7 @@ div.war{background-image:url(../assets/AllianceVsHorde.jpg);
         padding: 10%}
     .fronts {background-image: url(../assets/mobile-fronts-bg.jpg) !important;}
     .azeroth-heart div img{ margin-top: -15%;
-                            width:70% }
+                            width:50% }
    #kulop, #zanop{display: none!important}
    .infozand,.infokult {display: block!important}
    .wow-header{display: none;}

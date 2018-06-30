@@ -20,7 +20,7 @@ footer p{
 footer p, footer img{
     margin-top: 2%
 }
-@media (min-width: 576px) {
+@media (max-width: 767px) {
     footer img{
         width: 18%;
     }
