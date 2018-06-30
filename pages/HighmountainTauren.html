@@ -65,82 +65,87 @@
             </header>
     
             <div class="container-fluid other">
-                    <div class="row no-border justify-content-center">
-                            <div class="col-xs-12  col-md-6 col-lg-4 ">
-                                <img  src="../assets/bfa-logo.png" class="bfa-logo" width="100%" alt="logo" align="center">
+                    <div class="container-fluid other">
+                            <div class="row no-border justify-content-center">
+                                    <div class="col-xs-12  col-md-6 col-lg-4 ">
+                                        <img  src="../assets/bfa-logo.png" class="bfa-logo" width="100%" alt="logo" align="center">
+                                    </div>
                             </div>
-                    </div>
-        
-    <div class="row aboutallies">
-        <div class="col-xs-12 col-md-6">
-            <p id="text">
-            {{title}}
-            <br><br>
-            {{description}}
-            </p>
-            <div class="row justify-content-center align-items-center" id="images">
-                <div class="col-xs-12 col-md-4">
-                    <img v-bind:src="source1">
-                </div>
-                <div class="col-xs-12 col-md-4">
-                    <img v-bind:src="source2">
-                </div>
-                <div class="col-xs-12 col-md-4">
-                    <img v-bind:src="source3">
-                </div>
+                
+                            <div class="row aboutallies">
+                                    <div class="col-xs-12 w-100">
+                                        <p class="title" align="center">
+                                            {{title}}
+                                        </p>
+                                    </div>
+                                    <div class="col-xs-12 col-md-6" id="gender-switcher">
+                                        <p class="text">
+                                            {{description}}
+                                        </p>
+                                        <div id="switchers">
+                                            <div @click="maleon=true,femaleon=false" id="male">
+                                                <p align="center">Мужчина</p>
+                                            </div>
+                            
+                                            <div @click="maleon=false,femaleon=true" id="female">
+                                                <p align="center">Женщина</p>
+                                            </div>
+                                        </div>
+                                        <img v-bind:src="male" v-show="maleon">
+                                        <img v-bind:src="female" v-show="femaleon" >
+                                       
+                                    </div>
+                                    <div class="col-xs-12 col-md-6">
+                                            <div class="row justify-content-center align-items-center" id="images">
+                                                <div class="col-xs-12 col-md-4">
+                                                    <img v-bind:src="source1">
+                                                </div>
+                                                <div class="col-xs-12 col-md-4">
+                                                    <img v-bind:src="source2">
+                                                </div>
+                                                <div class="col-xs-12 col-md-4">
+                                                    <img v-bind:src="source3">
+                                                </div>
+                                            </div>
+                                            <div id="carouselExampleIndicators" class="carousel slide allies-carousel" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="carousel-padding d-block w-100">
+                <iframe class="w-100" src="https://www.youtube.com/embed/zOUMp4zMex8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
             </div>
-        </div>
-        <div class="col-xs-12 col-md-6" id="gender-switcher">
-            <div id="switchers">
-                <div @click="maleon=true,femaleon=false" id="male">
-                    <p  align="center">Муж.</p>
-                </div>
-
-                <div @click="maleon=false,femaleon=true" id="female">
-                    <p align="center">Жен.</p>
-                </div>
+          </div>
+          <div class="carousel-item">
+            <div class="carousel-padding d-block w-100">
+                <iframe class="w-100" src="https://www.youtube.com/embed/cGtKoPo1GSA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
             </div>
-            <img v-bind:src="male" v-show="maleon">
-            <img v-bind:src="female" v-show="femaleon">
-            <div id="carouselExampleIndicators" class="carousel slide allies-carousel" data-ride="carousel">
-                <ol class="carousel-indicators">
-                  <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                  <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                  <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                  <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
-                </ol>
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <div class="carousel-padding d-block w-100">
-                        <iframe class="w-100" src="https://www.youtube.com/embed/zOUMp4zMex8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <div class="carousel-padding d-block w-100">
-                        <iframe class="w-100" src="https://www.youtube.com/embed/cGtKoPo1GSA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <div class="carousel-padding d-block w-100">
-                        <iframe class="w-100" src="https://www.youtube.com/embed/ADg6pc2UNQg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <div class="carousel-padding d-block w-100">
-                        <iframe class="w-100" src="https://www.youtube.com/embed/llYgvE-antM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-                    </div>
-                  </div>
-                </div>
-                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="sr-only">Предыдущий</span>
-                </a>
-                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="sr-only">Следующий</span>
-                </a>
+          </div>
+          <div class="carousel-item">
+            <div class="carousel-padding d-block w-100">
+                <iframe class="w-100" src="https://www.youtube.com/embed/ADg6pc2UNQg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="carousel-padding d-block w-100">
+                <iframe class="w-100" src="https://www.youtube.com/embed/llYgvE-antM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            </div>
+          </div>
         </div>
-        </div> 
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Предыдущий</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Следующий</span>
+        </a>
+</div>
+                                    </div>
     </div>
     <footer>
         <div>
@@ -165,11 +170,17 @@
         <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js"></script>
         <script>
            var text = new Vue({
-                el:'#text',
+                el:'.text',
                 data: {
-                    title:'ТАУРЕНЫ КРУТОГОРЬЯ',
                     description:'Таурены Крутогорья — потомки Хална, храброго героя, прославившегося во время Войны древних. Они почитают духов земли, реки и неба. После вторжения Легиона  доверие между племенами было подорвано, но теперь племена Крутогорья вновь объединили свои силы. Они готовы покинуть священную гору, чтобы примкнуть к своим калимдорским сородичам и стать союзниками Орды.'
                 }
+            })
+
+             var title = new Vue({
+                el:'.title',
+                data: {
+                    title:'ТАУРЕНЫ КРУТОГОРЬЯ'
+                }    
             })
         
             var images = new Vue({

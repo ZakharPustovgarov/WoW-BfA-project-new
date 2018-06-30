@@ -56,7 +56,7 @@ iframe {height:23em;
  }
 
 @media (max-width: 767px) {
-    #images img { width: 80%;
+    #images img { width: 88%;
                 margin-bottom: 2%}
     #switchers img{width: 50%;}
     #switchers{margin-bottom: 5%}

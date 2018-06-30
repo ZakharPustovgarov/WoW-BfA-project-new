@@ -73,77 +73,82 @@
                             </div>
                     </div>
         
-    <div class="row aboutallies">
-        <div class="col-xs-12 col-md-6">
-            <p id="text">
-            {{title}}
-            <br><br>
-            {{description}}
-            </p>
-            <div class="row justify-content-center align-items-center" id="images">
-                <div class="col-xs-12 col-md-4">
-                    <img v-bind:src="source1">
-                </div>
-                <div class="col-xs-12 col-md-4">
-                    <img v-bind:src="source2">
-                </div>
-                <div class="col-xs-12 col-md-4">
-                    <img v-bind:src="source3">
-                </div>
-            </div>
+                    <div class="row aboutallies">
+                            <div class="col-xs-12 w-100">
+                                <p class="title" align="center">
+                                    {{title}}
+                                </p>
+                            </div>
+                            <div class="col-xs-12 col-md-6" id="gender-switcher">
+                                <p class="text">
+                                    {{description}}
+                                </p>
+                                <div id="switchers">
+                                    <div @click="maleon=true,femaleon=false" id="male">
+                                        <p align="center">Мужчина</p>
+                                    </div>
+                    
+                                    <div @click="maleon=false,femaleon=true" id="female">
+                                        <p align="center">Женщина</p>
+                                    </div>
+                                </div>
+                                <img v-bind:src="male" v-show="maleon">
+                                <img v-bind:src="female" v-show="femaleon" >
+                               
+                            </div>
+                            <div class="col-xs-12 col-md-6">
+                                    <div class="row justify-content-center align-items-center" id="images">
+                                        <div class="col-xs-12 col-md-4">
+                                            <img v-bind:src="source1">
+                                        </div>
+                                        <div class="col-xs-12 col-md-4">
+                                            <img v-bind:src="source2">
+                                        </div>
+                                        <div class="col-xs-12 col-md-4">
+                                            <img v-bind:src="source3">
+                                        </div>
+                                    </div>
+                                    <div id="carouselExampleIndicators" class="carousel slide allies-carousel" data-ride="carousel">
+                                            <ol class="carousel-indicators">
+                                              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                                              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                                              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                                              <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                                            </ol>
+                                            <div class="carousel-inner">
+                                              <div class="carousel-item active">
+                                                <div class="carousel-padding d-block w-100">
+                                                    <iframe class="w-100" src="https://www.youtube.com/embed/5E2dD-qfkcI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                                                </div>
+                                              </div>
+                                              <div class="carousel-item">
+                                                <div class="carousel-padding d-block w-100">
+                                                    <iframe class="w-100" src="https://www.youtube.com/embed/iEz0EbP1c_g" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                                                </div>
+                                              </div>
+                                              <div class="carousel-item">
+                                                <div class="carousel-padding d-block w-100">
+                                                    <iframe class="w-100" src="https://www.youtube.com/embed/anu_xyrxtEM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                                                </div>
+                                              </div>
+                                              <div class="carousel-item">
+                                                <div class="carousel-padding d-block w-100">
+                                                    <iframe class="w-100" src="https://www.youtube.com/embed/jYJSrVf4Cnw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                                                </div>
+                                              </div>
+                                            </div>
+                                            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                              <span class="sr-only">Предыдущий</span>
+                                            </a>
+                                            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                              <span class="sr-only">Следующий</span>
+                                            </a>
+                                    </div>
+                            </div>
+                            
         </div>
-        <div class="col-xs-12 col-md-6" id="gender-switcher">
-            <div id="switchers">
-                <div @click="maleon=true,femaleon=false" id="male">
-                    <p align="center">Муж.</p>
-                </div>
-
-                <div @click="maleon=false,femaleon=true" id="female">
-                    <p align="center">Жен.</p>
-                </div>
-            </div>
-            <img v-bind:src="male" v-show="maleon">
-            <img v-bind:src="female" v-show="femaleon">
-            <div id="carouselExampleIndicators" class="carousel slide allies-carousel" data-ride="carousel">
-                <ol class="carousel-indicators">
-                  <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                  <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                  <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                  <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
-                </ol>
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <div class="carousel-padding d-block w-100">
-                        <iframe class="w-100" src="https://www.youtube.com/embed/5E2dD-qfkcI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <div class="carousel-padding d-block w-100">
-                        <iframe class="w-100" src="https://www.youtube.com/embed/iEz0EbP1c_g" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <div class="carousel-padding d-block w-100">
-                        <iframe class="w-100" src="https://www.youtube.com/embed/anu_xyrxtEM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <div class="carousel-padding d-block w-100">
-                        <iframe class="w-100" src="https://www.youtube.com/embed/jYJSrVf4Cnw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-                    </div>
-                  </div>
-                </div>
-                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="sr-only">Предыдущий</span>
-                </a>
-                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="sr-only">Следующий</span>
-                </a>
-        </div>
-        </div> 
-    </div>
     <footer>
         <div>
           <ion-icon name="logo-facebook"></ion-icon>
@@ -167,11 +172,17 @@
         <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js"></script>
         <script>
           var text = new Vue({
-                el:'#text',
+                el:'.text',
                 data: {
-                    title:'ОЗАРЁННЫЕ ДРЕНЕИ',
                     description:'На протяжении многих тысячелетий армия Света сражалась с полчищами Пылающего Легиона в Круговерти Пустоты. Самые преданные делу дренеи проходили особый ритуал, чтобы стать одним целым с энергией Света и войти в число озаренных. Когда озаренные одержали окончательную победу на Аргусе, у них появилась новая цель: защищать Азерот от любых угроз и помогать Альянсу в противостоянии Орде.'
                 }
+            })
+
+            var title = new Vue({
+                el:'.title',
+                data: {
+                    title:'ОЗАРЁННЫЕ ДРЕНЕИ'
+                }    
             })
         
           var images = new Vue({
@@ -196,3 +207,4 @@
         </script>
     </body> 
 </html>
+
