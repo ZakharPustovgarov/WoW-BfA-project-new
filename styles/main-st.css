@@ -36,7 +36,7 @@ div.war{background-image:url(../assets/AllianceVsHorde.jpg);
 .feat {display: flex;
         flex-direction: column;
         align-items: center;}
-.featicons {width: 50%;}
+.featicons {width: 35%;}
 
 .infozand,.infokult{
     display: none;
@@ -67,8 +67,6 @@ div.war{background-image:url(../assets/AllianceVsHorde.jpg);
     .allies-carousel {width:100%}
  }
 
-
-@media (min-width: 768px) { }
 
 @media (max-width: 991px) {
     div.war{background-image:url(../assets/mobile-allies.jpg);
