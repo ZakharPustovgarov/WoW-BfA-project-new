@@ -71,51 +71,24 @@
         </div>
         <div class="row justify-content-center">
             <div class=" content col-xs-12  col-lg-8">
-                    <h1>WoW: Битва за Азерот — альфа версия [обновление столицы Альянса — Боралус в сборке #26287]</h1>
+                    <h1>Обновление столицы Альянса — Боралус</h1>
                     <p>На альфа–серверах Battle for Azeroth в очередной раз обновлена столица Альняса — Боралус, случилось это еще в сборке #26287 и я упустил этот момент.
                     Поэтому, исправляюсь и публикую новинки и изменения, которые были найдены в сборке #26287.</p>
                     <p>Если вкратце, то столица Альянса Боралус подверглась небольшим косметическим изменениям, среди которых: 
                     плененные силами Праудмуров ордынцы, морская академия Праудмуров близ крепости.</p>
                     <h1>Тюрьма Боралуса (темница)</h1>
-                    <div class="row justify-content-center">
-                        <div class="col-xs-12 col-md-6 col-lg-4">
-                            <img src="../assets/boralus-prison-1.jpg" alt="1">
-                        </div>
-                        <div class="col-xs-12 col-md-6 col-lg-4">
-                            <img src="../assets/boralus-prison-2.jpg" alt="2">
-                        </div>
-                        <div class="col-xs-12 col-md-6 col-lg-4">
-                            <img src="../assets/boralus-prison-3.jpg" alt="3">
-                        </div>
+                    <div id="prison-boralus" class="row justify-content-center">
+                        <boralus v-for="criminals in prisons" :structures="criminals"></boralus>
                     </div>
                     <h1>Академия Праудмуров</h1>
-                    <div class="row justify-content-center">
-                        <div class="col-xs-12 col-md-6 col-lg-4">
-                            <img src="../assets/praudmur-academy-1.jpg" alt="1">
-                        </div>
-                        <div class="col-xs-12 col-md-6 col-lg-4">
-                            <img src="../assets/praudmur-academy-2.jpg" alt="2">
-                        </div>
-                        <div class="col-xs-12 col-md-6 col-lg-4">
-                            <img src="../assets/praudmur-academy-3.jpg" alt="3">
-                        </div>
+                    <div id="academy-praudmur" class="row justify-content-center">
+                        <boralus v-for="pupils in academy" :structures="pupils"></boralus>
                     </div>
                     <h1>Обновления, затрагивающие внешний вид Боралуса</h1>
                     <p>Некоторые из территорий, населенных жителями, теперь имеют как больше растительности, так и подушек, кресел, диванов, расставленных вдоль узких улиц.</p>
-                    <div class="row justify-content-center">
-                            <div class="col-xs-12 col-md-6">
-                                <img src="../assets/boralus-changes-1.jpg" alt="1">
-                            </div>
-                            <div class="col-xs-12 col-md-6">
-                                <img src="../assets/boralus-changes-2.jpg" alt="2">
-                            </div>
-                            <div class="col-xs-12 col-md-6">
-                                <img src="../assets/boralus-changes-3.jpg" alt="3">
-                            </div>
-                            <div class="col-xs-12 col-md-6">
-                                <img src="../assets/boralus-changes-4.jpg" alt="4">
-                            </div>
-                        </div>
+                    <div id="changes-boralus" class="row justify-content-center">
+                        <boralus-changes v-for="corner in known" :places="corner"></boralus-changes>
+                    </div>
             </div>
         </div>
 
@@ -191,87 +164,10 @@
         <script src="https://unpkg.com/ionicons@4.2.0/dist/ionicons.js"></script>
         <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js"></script>
         <script src="../scripts/comments.js"></script>
+        <script src="../scripts/news3.js"></script>
     </body>
 
 </html>
-
-            <!--<div class="cont inf">
-                <h1>WoW: Битва за Азерот — альфа версия [обновление столицы Альянса — Боралус в сборке #26287]</h1>
-                <div align="center"><img class="nlogo" src="../assets/bfa-logo-black.jpg" alt="logo"></div>
-                <p>
-                    На альфа–серверах Battle for Azeroth в очередной раз обновлена столица Альняса — Боралус, случилось это еще в сборке #26287 и я упустил этот момент.
-
-                    Поэтому, исправляюсь и публикую новинки и изменения, которые были найдены в сборке #26287.
-                </p>
-                <p>Если вкратце, то столица Альянса Боралус подверглась небольшим косметическим изменениям, среди которых: 
-                плененные силами Праудмуров ордынцы, морская академия Праудмуров близ крепости.</p>
-                <h1>Тюрьма Боралуса (темница)</h1>
-                <div class="obj">
-                    <img class="hoverable" src="../assets/boralus-prison-1.jpg" alt="1">
-                    <img class="hoverable" src="../assets/boralus-prison-2.jpg" alt="2">
-                    <img class="hoverable" src="../assets/boralus-prison-3.jpg" alt="3">
-                </div>
-                <h1>Академия Праудмуров</h1>
-                <div class="obj">
-                    <img class="hoverable" src="../assets/praudmur-academy-1.jpg" alt="1">
-                    <img class="hoverable" src="../assets/praudmur-academy-2.jpg" alt="2">
-                    <img class="hoverable" src="../assets/praudmur-academy-3.jpg" alt="3">
-                </div>
-                <h1>Обновления, затрагивающие внешний вид Боралуса</h1>
-                <p>Некоторые из территорий, населенных жителями, теперь имеют как больше растительности, так и подушек, кресел, диванов, расставленных вдоль узких улиц.</p>
-                <div class="obj1">
-                        <img class="hoverable" src="../assets/boralus-changes-1.jpg" alt="1">
-                        <img class="hoverable" src="../assets/boralus-changes-2.jpg" alt="2">
-                        <img class="hoverable" src="../assets/boralus-changes-3.jpg" alt="3">
-                        <img class="hoverable" src="../assets/boralus-changes-4.jpg" alt="4">
-                </div>
-            </div>
-
-            <div class="cont inf1">
-                <h1>Комментарии пользователей</h1>
-                <div> 
-                    <div class="ucomment">
-                    <form method="GET">
-                    <p><b>Ваш комментарий:</b></p>
-                    <div>
-                        <label>Введите ваш BattleTag или элктронную почту:
-                            <input class="commentary" type="text" placeholder="example@bliz.com or #00000" required tabindex="1" name="name">
-                        </label>
-                    </div>
-                    <div>
-                        <label><p>Текст комментария:</p>
-                            <textarea class="commentary" wrap="hard" cols="50" rows="5" name="comment" tabindex="2" required></textarea>
-                        </label>
-                    </div>
-                    <button type="submit">Отправить</button>
-                    <button type="reset">Очистить</button>
-                    </form>
-                </div>
-                </div>
-                <div class="othercomment">
-                        <div class="smbdcomment">
-                        <div class="person">
-                            <div><h2></h2></div>
-                            <div><img src="../assets/laitril.png" alt="laitril"></div>
-                        </div>
-                    
-                        <div class="comment">
-                            <p>Ну наконец-то праздник на нашей улице, а то было как-то пустовато.</p>
-                        </div>
-                        </div>
-
-                        <div class="smbdcomment">
-                        <div class="person">
-                            <div><h2>Гэсер</h2></div>
-                            <div><img src="../assets/geser.png" alt="geser"></div>
-                        </div>
-
-                        <div class="comment">
-                            <p>Ха, и это всё? Какая же у вас убогая столица, не в сравнение с нашей. Позовите, когда она будет нормальной, а пока Альянс в пролёте!</p>
-                        </div>
-                    </div>
-                </div>
-            </div>-->
 
             
 

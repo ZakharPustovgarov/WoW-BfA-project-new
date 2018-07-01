@@ -70,7 +70,7 @@
         </div>
         <div class="row justify-content-center">
             <div class=" content col-xs-12  col-lg-8">
-                    <h1>WoW: Битва за Азерот — альфа версия [ранний обзор локации Вол'дун]</h1>
+                    <h1>Ранний обзор локации Вол'дун</h1>
                     <p>Смотрим на новинки дополнения Battle for Azeroth, которые были добавлены в сборке #26367 на альфа–сервера.
                     Сейчас предлагаю ознакомиться с новой локацией Вол'дун, которая расположена в Зандаларе и это родной край Вульперов.</p>
                     <p>Вол'дун представляет из себя безмолвную пустыню в северо–западной части континента Зандалар, под песками которой угадывается древний,
@@ -82,35 +82,13 @@
                     по всей видимости, сетраков раздирает гражданская война, в которой вы можете помочь небольшой фракции сетраков и заслужить их доверие.
                     На юге зоны находится поселение верных Ашвейн людей, поработивших местных вульпер и заставляющих их добывать азерит. По всему Вол'дуну разбросаны небольшие квест–хабы!</p>
                     <h1>Вол'дун — день</h1>
-                    <div class="row justify-content-center">
-                        <div class="col-xs-12 col-md-6 images-center">
-                            <img src="../assets/voldun-day-1.jpg">
-                        </div>
-                        <div class="col-xs-12 col-md-6">
-                            <img src="../assets/voldun-day-2.jpg">
-                        </div>
-                        <div class="col-xs-12 col-md-6">
-                            <img src="../assets/voldun-day-3.jpg">
-                        </div>
-                        <div class="col-xs-12 col-md-6">
-                            <img src="../assets/voldun-day-4.jpg">
-                        </div>
+                    <div id="day-voldun" class="row justify-content-center">
+                        <voldun v-for="days in ever" :bay="days"></voldun>
                     </div>
                     <h1>Вол'дун — ночь</h1>
-                    <div class="row justify-content-center">
-                            <div class="col-xs-12 col-md-6">
-                                <img src="../assets/voldun-night-1.jpg">
-                            </div>
-                            <div class="col-xs-12 col-md-6">
-                                <img src="../assets/voldun-night-2.jpg">
-                            </div>
-                            <div class="col-xs-12 col-md-6">
-                                <img src="../assets/voldun-night-3.jpg">
-                            </div>
-                            <div class="col-xs-12 col-md-6">
-                                <img src="../assets/voldun-night-4.jpg">
-                            </div>
-                        </div>
+                    <div id="night-voldun" class="row justify-content-center">
+                        <voldun v-for="nights in never" :bay="nights"></voldun>
+                    </div>
             </div>
         </div>
 
@@ -186,6 +164,7 @@
         <script src="https://unpkg.com/ionicons@4.2.0/dist/ionicons.js"></script>
         <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js"></script>
         <script src="../scripts/comments.js"></script>
+        <script src="../scripts/news2.js"></script>
     </body>
 
 </html>
