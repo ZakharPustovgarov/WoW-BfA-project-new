@@ -30,8 +30,8 @@
     .comment {width:100%}
     .comment p {padding: 2%}
 }
-@media (min-width: 768px){
-    .person img {width:20% ;
+@media (max-width: 767px){
+    .person img {width:25% ;
         margin-bottom:1%}
 }
 
@@ -48,7 +48,7 @@
         border-bottom:none;
         width:20%}
     .comment {width:80%;}
-    .person img {width:40% ;}
+    .person img {width:50% ;}
     
 }
 
