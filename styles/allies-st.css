@@ -1,7 +1,7 @@
 .aboutallies{background-size: cover;
             background-repeat: no-repeat}
 .container-fluid p {margin-top: 2%!important}
-#images {padding: 0!important}
+
 #images img { border:5px black solid;
             border-radius: 5px;}
 #images img:hover{box-shadow: 0px 0px 10px aliceblue;
@@ -27,7 +27,7 @@ iframe {height:23em;
     flex-direction:row;
     align-items: center;
     justify-content: space-between;
-    width: 100%;
+    width: 97%;
     margin:2% ;
 }
 #switchers > div{display: flex;
@@ -48,28 +48,25 @@ iframe {height:23em;
  }
 
 
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
     #images img { width: 100%}
     #switchers img{width: 30%;}
     #switchers > div {width:30%}
 
  }
 
-@media (max-width: 767px) {
+@media (max-width: 1023px) {
     #images img { width: 88%;
                 margin-bottom: 2%}
-    #switchers img{width: 50%;}
+    #switchers img{width: 45%;}
     #switchers{margin-bottom: 5%}
-    #switchers > div {width:40%}
+    #switchers > div {width:35%}
 
 }
 
-@media (min-width: 992px) {
-    
-}
-
-
-@media (min-width: 1200px) {
+@media (min-width: 768px) and (max-width:991px){
+    #images {padding:1%;
+            background-color: black }
 
 }
 
