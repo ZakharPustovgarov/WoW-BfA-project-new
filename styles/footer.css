@@ -11,7 +11,7 @@ footer > div {display: flex;
     justify-content: center;
     width: 50%}
 ion-icon{color: whitesmoke;
-        font-size: 190%;}
+        font-size: 210%;}
 footer p{
     width: 50%;
     text-align: center
@@ -22,7 +22,7 @@ footer p, footer img{
 }
 @media (max-width: 767px) {
     footer img{
-        width: 22%;
+        width: 28%;
     }
     footer {
         font-size: 70%
