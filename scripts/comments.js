@@ -15,12 +15,12 @@ Vue.component('comment', {
     new Vue({
         el:'#comments',
         data:{comments:[],
-            nextCommentId:0
+            CommentId:0
         },
         methods: {
             addComment: function () {
                 this.comments.push({
-                    id: this.nextCommentId++,
+                    id: this.CommentId++,
                     user: this.user,
                     comment: this.comment
                 })

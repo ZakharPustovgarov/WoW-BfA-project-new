@@ -22,18 +22,22 @@
     padding: 1% }
 
 .comment-col {padding: 0!important}
+.comment p {padding: 2%}
 @media (max-width: 991px) {
     .smbdcomment {flex-direction: column;}
     .person {border-bottom: 2px black solid;
             width: 100%;}
     .comment {width:100%}
-    .person img {width:20% ;
-                margin-bottom:1%}
     .comment p {padding: 2%}
 }
+@media (min-width: 768px){
+    .person img {width:20% ;
+        margin-bottom:1%}
+}
 
-@media (min-width: 768px) { 
-   
+@media (min-width: 768px) and (max-width:991px) { 
+    .person img {width:15% ;
+        margin-bottom:1%}
     
 }
 
