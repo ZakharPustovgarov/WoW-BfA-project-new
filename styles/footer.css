@@ -11,7 +11,7 @@ footer > div {display: flex;
     justify-content: center;
     width: 50%}
 ion-icon{color: whitesmoke;
-        font-size: 210%;}
+        font-size: 200%;}
 footer p{
     width: 50%;
     text-align: center
@@ -20,27 +20,40 @@ footer p{
 footer p, footer img{
     margin-top: 2%
 }
+ion-icon {margin-left: 5%;
+    margin-right: 5%}
+footer img{
+        width: 25%;
+    }
 @media (max-width: 767px) {
     footer img{
-        width: 28%;
+        width: 25%;
     }
     footer {
-        font-size: 70%
+        font-size: 65%
     }
     ion-icon {margin-left: 5%;
             margin-right: 5%}
  }
+ ion-icon{color: whitesmoke;
+    font-size: 220%;}
 
 
 @media (min-width: 768px) {
     footer img{
-        width: 10%;
+        width: 13%;
+    }
+    ion-icon{color: whitesmoke;
+        font-size: 200%;}
+    
+ }
+
+ @media (min-width: 992px) {
+    footer img{
+        width: 8%;
     }
     
  }
 
 
-@media (min-width: 992px) {
-    ion-icon {margin-left: 1%;
-        margin-right: 1%}
-}
+
