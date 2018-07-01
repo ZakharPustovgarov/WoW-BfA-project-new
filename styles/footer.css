@@ -30,13 +30,13 @@ footer img{
         width: 25%;
     }
     footer {
-        font-size: 70%
+        font-size: 75%
     }
     ion-icon {margin-left: 5%;
             margin-right: 5%}
  }
  ion-icon{color: whitesmoke;
-    font-size: 230%;}
+    font-size: 300%;}
 
 
 @media (min-width: 768px) {
