@@ -32,9 +32,11 @@ h1,h2 {padding: 1%}
 .new-of-day p {padding: 2%;}
 @media (max-width: 767px) {
     .new img {display:none }
+    .new-of-day {background-image: url(../assets/trilobit-1-mobile.jpg);} 
 }
 
-@media (min-width: 768px) { 
+@media (min-width: 768px) {
+    .new-of-day {background-image: url(../assets/trilobit-1.jpg);} 
    
     
 }

@@ -14,7 +14,7 @@ h1 , p{padding: 2%
                 margin-bottom:7%}
 .container-fluid {background: linear-gradient(rgb(0,31,85),rgb(1,25,71));}
 body {color: whitesmoke!important}
-@media (min-width: 576px) {
+@media (max-width: 991px) {
     .col-xs-12 img{ width:50% ;}
     .navbar-brand a img {width:27%}
  }

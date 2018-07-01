@@ -22,7 +22,7 @@
     padding: 1% }
 
 .comment-col {padding: 0!important}
-@media (min-width: 576px) {
+@media (max-width: 991px) {
     .smbdcomment {flex-direction: column;}
     .person {border-bottom: 2px black solid;
             width: 100%;}
